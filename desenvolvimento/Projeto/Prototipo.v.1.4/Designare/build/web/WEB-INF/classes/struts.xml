@@ -19,21 +19,25 @@
         <action name ="login" >
             <result>/login/index.jsp</result>
         </action>
-        <action name ="cadastro" class="br.com.designare.action.Cadastro" method="execute">
+        <action name ="cadastro1">
             <result name="success">/cadastro/index.jsp</result>
+            
+        </action>
+        <action name ="cadastrar" class="br.com.designare.action.Cadastro" method="execute">
+            <result name="success">/cadastro/sucesso.jsp</result>
             <result name="error">teste/deu_ruim.jsp </result>            
         </action>
         <action name ="criarProjeto" >
             <result>/projetos/criarprojeto.jsp</result>
         </action>
-        <action name ="projetos" >
+        <action name ="projetos">
             <result>/projetos/projetos.jsp</result>
         </action>
         <action name ="abrirDiagrama" >
-            <result>/diagrama/abrir_diagrama.jsp</result>
+            <result>/diagramas/abrir_diagrama.jsp</result>
         </action>
         <action name ="meusdiagramas" >
-            <result>/diagrama/meusdiagramas.jsp</result>
+            <result>/diagramas/meusdiagramas.jsp</result>
         </action>
         <action name ="criarComponente" >
             <result>/componentes/criar_componente.jsp</result>

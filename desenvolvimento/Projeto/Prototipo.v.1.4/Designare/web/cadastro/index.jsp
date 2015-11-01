@@ -12,8 +12,8 @@
         <title>Designare - Ferramenta CASE UML para deficientes visuais</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
-        <link rel="stylesheet" type="text/css" href="../assets/css/utils.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/utils.css">
         <!-- Latest compiled and minified CSS -->
         <!--
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -61,10 +61,10 @@
                     <button type="submit">EXPORTAR</button>
                     
                 </form>-->
-                <s:form action="cadastro.action" method="post">
+                <s:form action="/cadastrar" method="post">
                     <s:textfield label="Nome" name="nome" />
                     <s:textfield label="Email" name="email" />
-                    <s:textfield label="Senha" name="senha" />
+                    <s:password label="Senha" name="senha" />
                     <s:submit label="Cadastrar" value="Cadastrar"></s:submit>
                 </s:form>
             </div>

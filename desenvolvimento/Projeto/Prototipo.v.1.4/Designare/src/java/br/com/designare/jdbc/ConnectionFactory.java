@@ -12,7 +12,7 @@ public class ConnectionFactory {
         try {
             String url ="jdbc:mysql://localhost:3306/designare";
             String usuario = "root";
-            String senha = "root";
+            String senha = "";
             Class.forName("com.mysql.jdbc.Driver"); 
             return DriverManager.getConnection(url, usuario, senha);
         } catch (SQLException e) {

@@ -1,3 +1,11 @@
+<%-- 
+    Document   : index
+    Created on : 24/10/2015, 16:41:59
+    Author     : marcus
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -31,19 +39,31 @@
                 </ul>
             </nav>
         </header>
-        <section id="application">
-            <div class="container">
-                <div class="area_application meus_diagramas">
-                    <h1>Projeto FatecSUL - Diagrama de Caso de Uso - UseCase01</h1>
-                    <div class="item_listagem">
-                            <button type="submit">CRIAR COMPONENTE</button>
-                            <button type="submit">ASSOCIAR COMPONENTES</button>
-                            <button type="submit">CONSULTAR COMPONENTES CRIADOS</button>
-		            <button type="submit">EXPORTAR DIAGRAMA</button>
+        <div class="container">
+            <div class="area_application">
+                <h1>Cadastro realizado com sucesso</h1>
+                <s:property value="nome"/>
+<!--                <form name="form_cadastro" id="frm_cadastro">
+                    <div class="form-group">
+                        <label for="nome">Nome: </label> 
+                        <input autocomplete="off" name="nome" id="nome" class="form-control" type="text">
                     </div>
-                   
-                </div>
+                    <div class="form-group">
+                        <label for="email">Email: </label>
+                        <input autocomplete="off" name="email" id="email" class="form-control" type="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha: </label> 
+                        <input autocomplete="off" name="senha" id="senha" class="form-control" type="password">
+                    </div>
+                    <button type="submit">CADASTRAR</button>
+                    
+                    <button type="submit">EXCLUIR</button>
+                    <button type="submit">EXPORTAR</button>
+                    
+                </form>-->
             </div>
-        </section>
+
+        </div>
     </body>
 </html>
