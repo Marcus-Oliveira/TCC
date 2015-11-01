@@ -21,37 +21,22 @@ import static javax.ws.rs.client.Entity.form;
  */
 public class Cadastro extends ActionSupport {
 
-    private String nome;
-    private String email;
-    private String senha;
-    private String error_message;
-
-    private Usuario usuario = new Usuario();
-
-    public Usuario getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
-    }
-
-    public Cadastro() {
-    }
-
+    private Usuario userBean;
+     
     public String execute() throws Exception {
-        //try {
-            UsuarioDAO dao = new UsuarioDAO();
-            usuario.setNome(nome);
-            usuario.setEmail(email);
-            usuario.setSenha(senha);
-            dao.incluir(usuario);
-            return SUCCESS;
-        //} catch (java.lang.RuntimeException e) {
-          //  error_message = e.getMessage();
-            //return ERROR;
-        //}
-
+        UsuarioDAO dao = new UsuarioDAO();
+        dao.incluir(userBean);
+        // add your login procedure here...
+         
+        return SUCCESS;
+    }
+ 
+    public Usuario getUserBean() {
+        return userBean;
+    }
+ 
+    public void setUserBean(Usuario userBean) {
+        this.userBean = userBean;
     }
 
 }

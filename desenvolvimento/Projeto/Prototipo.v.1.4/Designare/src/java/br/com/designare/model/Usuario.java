@@ -6,7 +6,7 @@ package br.com.designare.model;
  */
 public class Usuario {
     
-   //Atributos do usuário
+    //Atributos do usuário
    private long id;
    private String nome;
    private String email;

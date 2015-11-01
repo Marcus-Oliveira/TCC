@@ -42,30 +42,30 @@
         <div class="container">
             <div class="area_application">
                 <h1>Cadastre-se</h1>
-<!--                <form name="form_cadastro" id="frm_cadastro">
-                    <div class="form-group">
-                        <label for="nome">Nome: </label> 
-                        <input autocomplete="off" name="nome" id="nome" class="form-control" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email: </label>
-                        <input autocomplete="off" name="email" id="email" class="form-control" type="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="senha">Senha: </label> 
-                        <input autocomplete="off" name="senha" id="senha" class="form-control" type="password">
-                    </div>
-                    <button type="submit">CADASTRAR</button>
-                    
-                    <button type="submit">EXCLUIR</button>
-                    <button type="submit">EXPORTAR</button>
-                    
-                </form>-->
+                <!--                <form name="form_cadastro" id="frm_cadastro">
+                                    <div class="form-group">
+                                        <label for="nome">Nome: </label> 
+                                        <input autocomplete="off" name="nome" id="nome" class="form-control" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email: </label>
+                                        <input autocomplete="off" name="email" id="email" class="form-control" type="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="senha">Senha: </label> 
+                                        <input autocomplete="off" name="senha" id="senha" class="form-control" type="password">
+                                    </div>
+                                    <button type="submit">CADASTRAR</button>
+                                    
+                                    <button type="submit">EXCLUIR</button>
+                                    <button type="submit">EXPORTAR</button>
+                                    
+                                </form>-->
                 <s:form action="/cadastrar" method="post">
-                    <s:textfield label="Nome" name="nome" />
-                    <s:textfield label="Email" name="email" />
-                    <s:password label="Senha" name="senha" />
-                    <s:submit label="Cadastrar" value="Cadastrar"></s:submit>
+                    <s:textfield name="userBean.nome" label="Nome" />
+                    <s:textfield name="userBean.email" label="E-mail" />
+                    <s:password name="userBean.senha" label="Password" />
+                    <s:submit value="Login" />
                 </s:form>
             </div>
 

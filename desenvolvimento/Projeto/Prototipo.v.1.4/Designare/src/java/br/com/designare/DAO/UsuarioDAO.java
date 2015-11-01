@@ -23,7 +23,7 @@ public class UsuarioDAO {
     //Inclui usuários no BD
     public void incluir (Usuario usuario) throws SQLException{
         //Query SQL
-        String sql = "insert into usuario "+"(nome,email,senha)"+"values (?,?,?)";
+        String sql = "insert into usuario "+"(nome, email,senha)"+"values (?,?,?)";
         try{
             //Prepared Statement para a inserção
             PreparedStatement stmt = connection.prepareStatement(sql);
@@ -39,6 +39,8 @@ public class UsuarioDAO {
             throw new RuntimeException(e);
         }     
     }
+    
+    
     
     //Lista os usuários do DB
     public List <Usuario> listaUsuario() throws SQLException{
@@ -112,5 +114,6 @@ public class UsuarioDAO {
          catch (SQLException e) {
             throw new RuntimeException(e);
          }
-    }    
+    }  
+    
 }
