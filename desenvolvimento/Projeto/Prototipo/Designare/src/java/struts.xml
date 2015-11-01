@@ -19,7 +19,7 @@
         </action>
         <action name ="cadastrar" class="br.com.designare.action.Cadastro" method="execute">
             <result name="success">/cadastro/sucesso.jsp</result>
-            <result name="error">erros/something_wrong.jsp </result>            
+            <result name="error">erros/something_wrong.jsp </result>
         </action>
         <action name ="criarProjeto" >
             <result>/projetos/criarprojeto.jsp</result>
