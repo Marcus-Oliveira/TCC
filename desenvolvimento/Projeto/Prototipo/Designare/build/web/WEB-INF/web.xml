@@ -14,6 +14,10 @@
         </session-timeout>
     </session-config>
     <welcome-file-list>
-        <welcome-file>cadastro/index.jsp</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
+    <error-page>  
+        <error-code>404</error-code>  
+        <location>/login/index.jsp</location>  
+    </error-page> 
 </web-app>

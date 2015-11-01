@@ -6,26 +6,20 @@
     <!-- <include file="example.xml"/> -->
     <!-- Configuration for the default package. -->
     <package name="area_publica" extends="struts-default">
-        <action name ="Teste2" class ="br.com.designare.test.TesteAction">
-            <result name="success">indexs.jsp </result>
-            <result name="error">teste/deu_ruim.jsp </result>
-        </action>
-        <action name ="Teste" class ="br.com.designare.test.TesteAction">
-            <result name="success">index.jsp </result>
-            <result name="error">teste/deu_ruim.jsp </result>
+        <action name ="index">
+            <result name="success">index.jsp</result>
         </action>
     </package>
     <package name="area_logada" extends="struts-default">
-        <action name ="login" >
+        <action name ="login">
             <result>/login/index.jsp</result>
         </action>
         <action name ="cadastro1">
             <result name="success">/cadastro/index.jsp</result>
-            
         </action>
         <action name ="cadastrar" class="br.com.designare.action.Cadastro" method="execute">
             <result name="success">/cadastro/sucesso.jsp</result>
-            <result name="error">teste/deu_ruim.jsp </result>            
+            <result name="error">erros/something_wrong.jsp </result>            
         </action>
         <action name ="criarProjeto" >
             <result>/projetos/criarprojeto.jsp</result>

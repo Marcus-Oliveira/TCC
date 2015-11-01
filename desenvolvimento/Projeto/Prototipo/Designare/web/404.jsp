@@ -1,11 +1,19 @@
+<%-- 
+    Document   : index
+    Created on : 24/10/2015, 16:41:59
+    Author     : marcus
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
 <html>
     <head>
         <title>Designare - Ferramenta CASE UML para deficientes visuais</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
-        <link rel="stylesheet" type="text/css" href="../assets/css/utils.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/utils.css">
         <!-- Latest compiled and minified CSS -->
         <!--
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -31,32 +39,11 @@
                 </ul>
             </nav>
         </header>
-        <section id="application">
-            <div class="container">
-                <div class="area_application meus_projetos">
-                    <h1>Meus projetos</h1>
-                    <div class="item_listagem">
-                        <form name="form_projeto" id="form_projeto">
-                            <h3 class="text-center">Projeto FatecSul</h3>
-                            <button type="submit">ABRIR PROJETO</button>
-                            <button type="submit">EXCLUIR</button>
-                            <button type="submit">EXPORTAR</button>
-                        </form>
-                    </div>
-                    <br />
-                    <div class="item_listagem">
-                        <form name="form_projeto" id="form_projeto">
-                            <h3 class="text-center">Projeto Boletim_Online</h3>
-                            <button type="submit">ABRIR PROJETO</button>
-                            <button type="submit">EXCLUIR</button>
-                            <button type="submit">EXPORTAR</button>
-                        </form>
-                    </div>
-
-                    
-
-                </div>
+        <div class="container">
+            <div class="area_application">
+                <h1>Error 404 - Página não encontrada</h1>
             </div>
-        </section>
+
+        </div>
     </body>
 </html>
